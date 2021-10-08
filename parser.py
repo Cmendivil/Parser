@@ -26,7 +26,7 @@ def parser(lines):
                 styled_value = False
             elif re.match('^(-)?(\d)+$', value[1]):
                 styled_value = int(value[1])
-            elif re.match('^(\d)+\\.(\d)+$', value[1]):
+            elif re.match('^(-)?(\d)+\\.(\d)+$', value[1]):
                 styled_value = float(value[1])
             else:
                 styled_value = value[1]
